@@ -1,0 +1,50 @@
+body * {
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #ddd;
+}
+body {
+	background-color: #000;
+}
+pre {
+	white-space: pre-wrap;
+}
+#off {
+	position: absolute;
+	color: #ddd;
+	top: 50%;
+}
+.container {
+	width: 100%;
+}
+.input-area {
+	width: 100%;
+}
+textarea, input {
+	outline: none;
+	height: 24px;
+}
+textarea, input, .view-area {
+	/*width: 100%;*/
+	background-color: #000;
+	border: none;
+	resize: none;
+	font-size: 20px;
+}
+.path {
+	display: inline-block;
+	font-size: 20px;
+	vertical-align: top;
+	margin-top: 2px;
+}
+#out > pre {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.cursor {
+	animation: blinker steps(1) 500ms infinite alternate;
+}
+@keyframes blinker {
+	0% { visibility: visible; }
+	50% { visibility: hidden; }
+	100% { visibility: visible; }
+}
